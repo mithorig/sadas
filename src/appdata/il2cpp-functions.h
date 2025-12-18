@@ -46,6 +46,8 @@ DO_APP_FUNC(0x0147C290, bool, MonsterToughnessInfo_DamageToToughness, (MonsterTo
 // Always Crit
 DO_APP_FUNC(0x010140E0, iFP, ActorAdditionalAttrInfo_get_critRate, (ActorAdditionalAttrInfo* __this, MethodInfo* method));
 
+
+DO_APP_FUNC(0x010E3700, FP, ActorAdditionalAttrInfo_get_moveSpeedRatio, (ActorAdditionalAttrInfo* __this, MethodInfo* method));
 DO_APP_FUNC(0x0521FE00, FP, FP_op_Implicit_3, (int32_t value, MethodInfo* method));
 DO_APP_FUNC(0x05233D10, FP, iFP_get_Value, (iFP* __this, MethodInfo* method));
 DO_APP_FUNC(0x052349C0, iFP, iFP_op_Implicit, (FP val, MethodInfo* method));

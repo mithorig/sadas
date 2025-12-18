@@ -12,6 +12,7 @@
 #include "cheat/MobVacuum.h"
 #include "cheat/StatModifier.h"
 #include "cheat/MoveSpeed.h"
+#include "cheat/AutoWin.h"
 
 #include "cheat/misc/About.h"
 
@@ -59,6 +60,7 @@ void Run(HMODULE* phModule) {
 		ADD_FEATURE(MobVacuum),
 		ADD_FEATURE(StatModifier),
 		ADD_FEATURE(MoveSpeed),
+		ADD_FEATURE(AutoWin),
 		ADD_FEATURE(About)
 	});
 	#undef ADD_FEATURE

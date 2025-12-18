@@ -178,6 +178,7 @@
     <ClInclude Include="src\CheatMenu.h" />
     <ClInclude Include="src\cheat\StatModifier.h" />
     <ClInclude Include="src\cheat\MoveSpeed.h" />
+    <ClInclude Include="src\cheat\AutoWin.h" />
     <ClInclude Include="src\cheat\HitEffect.h" />
     <ClInclude Include="src\cheat\InstantBreak.h" />
     <ClInclude Include="src\cheat\misc\About.h" />
@@ -203,6 +204,7 @@
     <ClCompile Include="src\appdata\helpers.cpp" />
     <ClCompile Include="src\cheat\StatModifier.cpp" />
     <ClCompile Include="src\cheat\MoveSpeed.cpp" />
+    <ClCompile Include="src\cheat\AutoWin.cpp" />
     <ClCompile Include="src\cheat\HitEffect.cpp" />
     <ClCompile Include="src\appdata\il2cpp-init.cpp" />
     <ClCompile Include="src\CheatMenu.cpp" />

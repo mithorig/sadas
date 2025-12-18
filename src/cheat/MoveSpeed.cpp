@@ -114,9 +114,9 @@ namespace cheat::feature
                     
                     // I will attempt to access `_serializedValue` as it's common in IL2CPP for fixed point structs.
                     
-                    int64_t newValue = (int64_t)(original.fields._serializedValue * moveSpeed.f_MoveSpeedValue);
-                    original.fields._serializedValue = newValue;
-                    return original;
+					int64_t newValue = (int64_t)(original._serializedValue * moveSpeed.f_MoveSpeedValue);
+					original._serializedValue = newValue;
+					return original;
 				}
 			}
 		}
