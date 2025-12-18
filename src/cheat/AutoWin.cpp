@@ -31,15 +31,6 @@ namespace cheat::feature
 		if (monsterActors == nullptr)
 			return;
 
-		// Create a zero iFP
-		// Assuming 0 is 0 in fixed point
-		auto zeroFP = (app::FP)0;
-		// If explicit conversion needed, might need op_Implicit. 
-		// But let's assume we can get a zero iFP via casting or default init if possible.
-		// However, app::iFP is likely a struct wrapper.
-		// Let's rely on app::iFP_op_Implicit which we saw in StatModifier.
-		auto zero = app::iFP_op_Implicit(zeroFP, nullptr);
-
 		for (auto monster : *monsterActors)
 		{
 			auto monsterActor = CastTo<app::AdventureActor>(monster, *app::AdventureActor__TypeInfo);
@@ -50,7 +41,8 @@ namespace cheat::feature
 			if (health == nullptr || !health->fields._isAlive)
 				continue;
 
-			app::ActorHealthInfo_set_hp(health, zero, nullptr);
+			// Directly set _isAlive to false to kill the monster
+			health->fields._isAlive = false;
 		}
 	}
 
